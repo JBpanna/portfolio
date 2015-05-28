@@ -70,7 +70,7 @@
 	
 	header {
 		border-bottom: 5px solid #712c98;
-		margin-bottom: 60px;
+		margin: 0, 0, 60px, 0;
 	}
 	
 	.categories {
@@ -84,12 +84,13 @@
 
 	.profile-photo {
 		float: left;
-		margin: 0 5% 0 2em;
+		margin: 0 5% 0 60px;
+		width: 30%;
+
 	}
 	
 	.prose {
-		float: right;
-		width: 40%;
+		margin: 0;
 		max-width: 700px;
 	}
 	

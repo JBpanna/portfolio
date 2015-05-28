@@ -4,8 +4,8 @@
 
 /* site body */
 body {
-	background-color: #fff;
-	color: #999;
+	background-color: #fbfcfa;
+	color: #888;
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -37,21 +37,22 @@ header {
 #logo {
 	text-align: center;
 	margin: 0;
+	
 }
 
 /* header */
 header {
-	background: #8b49b1;
+	background: #7d54ba;
 	border-color: #712c98;
 }
 
 /* logo text */
 h1, h2 {
-	color: #fff;
+	color: #fdfddd;
 }
 
 h1 {
-	font-family: 'Changa One', sans-serif;
+	font-family: 'Fredericka the Great', cursive;
 	margin: 15px, 0;
 	font-size: 1.75em;
 	font-weight: normal;
@@ -111,11 +112,12 @@ nav ul {
 
 nav li {
 	display: inline-block;
+	font-family: 'Acme', sans-serif;
 }
 
 /* nav link */
 nav a, nav a:visited {
-	color: #fff;
+	color: #fdfddd;
 	font-weight: 800;
 	padding: 15px 10px;
 }
@@ -140,32 +142,58 @@ nav a.selected, nav a:hover {
 	width: 45%;
 	margin: 2.5%;
 	background-color: #f5f5f5;
-	color: #bdc3c7;
+	color: #999;
 }
 
 #gallery li a p {
 	margin: 0;
 	padding: 5%;
 	font-size: 0.75em;
-	color: #c2bdd7;
+	color:#999;
+}
+
+#gallery li a img {
+	pointer-events: none;
+}
+
+/********************
+	PAGES PICTURES
+********************/
+
+#pictures_page div {
+	max-width: 512px;
+	height: auto;
+	
+}
+
+#pictures_page div img {
+	pointer-events: none;
+}
+
+#pictures_page > div {
+	display: none;
+}
+
+#pictures_page > div:target {
+	display: block;
 }
 
 /********************
 	PAGE ABOUT
 ********************/
 
-.poem p {
+/***.poem p {
 	text-align: left;
 	padding-left: 2em;
 	text-indent: -2em;
 	margin-bottom: -1em;
 	word-wrap: break-word;
-}
+}***/
 
-.prose p {
-	text-align: start;
+/**.prose p {
+	text-align: left;
 	text-indent: 2em;
-}
+}**/
 
 .profile-photo {
 	display: block;
@@ -186,24 +214,32 @@ nav a.selected, nav a:hover {
 }
 
 .contact-info a {
-	display: block;
+	display: inline-block;
 	min-height: 20px;
 	background-repeat: no-repeat;
 	background-size: 20px 20px;
 	padding: 0 0 0 30px;
 	margin: 0 0 10px;
+	float: left;
 }
 
-.contact-info li.phone a {
+.contact-info li a.phone {
 	background-image: url('../img/phone.png');
 }
 
-.contact-info li.mail a {
+.contact-info li a.mail {
 	background-image: url('../img/mail.png');
+	clear: left;
 }
 
-.contact-info li.twitter a {
-	background-image: url('../img/twitter.png');
+.contact-info li a.second_a {
+	padding: 0 0 0 0px;
+	margin: 0px 0 10px;
+	
+}
+
+.contact-info li p {
+	clear: left;
 }
 
 /********************
@@ -213,6 +249,7 @@ nav a.selected, nav a:hover {
 .categories {
 	text-align: center;
 	margin: 0 auto 0 auto;
+	font-family: 'Acme', sans-serif;
 }
 
 .artist_work {
